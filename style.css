@@ -1,0 +1,110 @@
+header {
+  background-image: url("assets/images/sky.jpeg");
+  background-size: cover;
+  background-position: center;
+  padding: 40px 0;
+  text-align: center;
+  color: white;
+}
+
+
+body {
+    background-color: lightblue;
+    margin: 0;
+    padding: 20px;
+}
+
+.profile {
+    width: 250px;
+    height: 330px;
+    display: block;
+    margin: 0 auto; 
+}
+
+h1 {
+    color: midnightblue;
+    text-align: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid midnightblue;
+}
+
+.cutenav li {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: steelblue;
+    text-align: center;
+    margin: 5px 0;
+}
+
+.cutenav ul {
+  list-style-position: inside;
+  padding-left: 0;
+}
+
+h2 {
+    color: darkblue;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border: solid 2px darkblue;
+    padding: 10px;
+}
+
+p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: darkslategray;
+    text-align: center;
+    margin: 10px 0;
+}
+
+#education, #skills, #projects {
+    font-family: 'Playfair Display', serif;
+    color: navy; 
+    margin-bottom: 10px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 auto 20px;
+  background-color: white;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+th, td {
+  border: 1px solid #6c8cd5;
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background-color: #6c8cd5;
+  color: white;
+  font-weight: bold;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+}
+
+button {
+  background-color: midnightblue;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: block;
+  margin: 10px, auto; 
+}
+
+button:hover {
+  background-color: #0c154d; 
+}
+
+@media (max-width: 768px) {
+  .profile {
+    width: 160px;
+    height: auto;
+  }
+} 

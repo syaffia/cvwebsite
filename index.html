@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV Website</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="script.js" href="assets/js/script.js"></script>
+</head>
+
+<body>
+
+  <header>
+    <h1>My CV</h1>
+    <nav class="cutenav">
+      <ul>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#projects">Projects</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about">
+      <h2>About Me</h2>
+      <img class="profile" src="assets/images/photo.jpg" alt="profile photo">
+      <p id="typing"></p>
+    </section>
+
+    <section id="education">
+      <h2>Education</h2>
+      <ul>
+        <li>Universiti Teknologi Petronas (2025-Recent) Bachelor in Information Technology</li>
+        <li>Kolej Matrikulasi Kejuruteraan Kedah (2023-2024)</li>
+        <li>Sekolah Menengah Kebangsaan St.George(2018-2023)</li>
+      </ul>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <ol>
+        <li>HTML, CSS, JavaScript</li>
+        <li>C++ & C#</li>
+        <li>SQL & Database Design</li>
+      </ol>
+      <p>These are my current go-to tools. Always improving, always exploring 🚀</p>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>Project</th>
+              <th>Tools Used</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Horror Game in Unity</td>
+              <td>Unity, C#</td>
+            </tr>
+            <tr>
+              <td>Personal Portfolio Website</td>
+              <td>HTML, CSS, JS</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Each project taught me new skills — and debugging patience 😅</p>
+      <button onclick="downloadCV()">Download CV</button>
+    </section>
+
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>If anything sparks your interest, feel free to hit me up! 💌<br>Email: atiqahsyaffia@gmail.com<br>LinkedIn: <a
+          href="https://www.linkedin.com/in/atiqah-syaffia-binti-mohd-fazeli-b8892921a/">Click Here!</a></p>
+    </section>
+
+    <a href="#about" class="back-to-top">Back to Top</a>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 My CV Website</p>
+  </footer>
+</body>
+
+</html>
