@@ -8,7 +8,7 @@ function typeEffect() {
     document.getElementById("typing").innerHTML += currentChar;
     index++;
 
-    let delay = 20; 
+    let delay = 20; /* update */
 
     if ([".", "!", "?"].includes(currentChar)) {
       delay = 600; /* long pause */
@@ -35,7 +35,7 @@ toggleButton.addEventListener("click", function () {
 });
 
 
-/* Reveal animation on scroll */
+/* reveal animation on scroll */
 const revealElements = document.querySelectorAll('.reveal');
 
 function revealOnScroll() {
