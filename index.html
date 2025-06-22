@@ -6,20 +6,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CV Website</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <script src="script.js" href="script.js"></script>
 </head>
 
 <body>
 
   <header>
-    <h1>My CV</h1>
+    <h1>MY CV</h1>
     <nav class="cutenav">
       <ul>
         <li><a href="#about">About Me</a></li>
         <li><a href="#education">Education</a></li>
+        <li><a href="#certificates">Certificates</a></li> <!-- update -->
         <li><a href="#skills">Skills</a></li>
-        <li><a href="#contact">Contact</a></li>
         <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
@@ -27,20 +29,49 @@
   <main>
     <section id="about">
       <h2>About Me</h2>
-      <img class="profile" src="photo.jpg" alt="profile photo">
+      <img class="profile" src="assets/images/photo.jpg" alt="profile photo">
       <p id="typing"></p>
     </section>
 
-    <section id="education">
+    <section id="education" class="reveal">
       <h2>Education</h2>
       <ul>
-        <li>Universiti Teknologi Petronas (2025-Recent) Bachelor in Information Technology</li>
-        <li>Kolej Matrikulasi Kejuruteraan Kedah (2023-2024)</li>
+        <li>Universiti Teknologi Petronas, Bachelor in Information Technology (2025-Recent)</li>
+        <li>Kolej Matrikulasi Kejuruteraan Kedah, Foundation in Basic Engineering (2023-2024)</li>
         <li>Sekolah Menengah Kebangsaan St.George(2018-2023)</li>
       </ul>
     </section>
+    <!-- update -->
+    <section id="certificates" class="reveal">
+  <h2>Certificates</h2>
+  <div class="table-wrapper">
+    <table>
+      <thead>
+        <tr>
+          <th>Certificate</th>
+          <th>Provider</th>
+          <th>Year</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Google IT Support Professional Certificate</td>
+          <td>Coursera</td>
+          <td>2025</td>
+        </tr>
+        <tr>
+          <td>IBM Data Science Professional Certificate</td>
+          <td>Coursera</td>
+          <td>2025</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p>These certifications strengthened my foundation in technical support and data analytics 📈</p>
+</section>
 
-    <section id="skills">
+
+    <section id="skills" class="reveal">
       <h2>Skills</h2>
       <ol>
         <li>HTML, CSS, JavaScript</li>
@@ -50,7 +81,7 @@
       <p>These are my current go-to tools. Always improving, always exploring 🚀</p>
     </section>
 
-    <section id="projects">
+    <section id="projects" class="reveal">
       <h2>Projects</h2>
       <div class="table-wrapper">
         <table>
@@ -62,33 +93,41 @@
           </thead>
           <tbody>
             <tr>
-              <td>Horror Game in Unity</td>
+              <td><i class="fas fa-gamepad"></i> Horror Game in Unity</td>
               <td>Unity, C#</td>
             </tr>
             <tr>
-              <td>Personal Portfolio Website</td>
+              <td><i class="fas fa-globe"></i> Personal Portfolio Website</td>
               <td>HTML, CSS, JS</td>
             </tr>
           </tbody>
         </table>
       </div>
       <p>Each project taught me new skills — and debugging patience 😅</p>
-      <button onclick="downloadCV()">Download CV</button>
-    </section>
+      <button onclick="window.open('assets/files/cv.pdf')">Download CV</button>
+    </section> <!-- update -->
 
-
+    <!-- update -->
     <section id="contact">
       <h2>Contact</h2>
-      <p>If anything sparks your interest, feel free to hit me up! 💌<br>Email: atiqahsyaffia@gmail.com<br>LinkedIn: <a
-          href="https://www.linkedin.com/in/atiqah-syaffia-binti-mohd-fazeli-b8892921a/">Click Here!</a></p>
+      <p>
+      If you're interested in collaborating or just want to say hi, feel free to reach out!<br>
+      <i class="fas fa-envelope"></i> Email: atiqahsyaffia@gmail.com<br>
+      <i class="fab fa-linkedin"></i> LinkedIn:
+      <a href="https://www.linkedin.com/in/atiqah-syaffia-binti-mohd-fazeli-b8892921a/">Click Here!</a>
+      </p>
     </section>
+    <!-- update --> 
+    <button id="darkModeToggle">Enable Dark Mode🌙</button>
 
-    <a href="#about" class="back-to-top">Back to Top</a>
+  
+    <a href="#" class="back-to-top">Back to Top<i class="fas fa-arrow-up"></i></a>
   </main>
 
   <footer>
     <p>&copy; 2025 My CV Website</p>
   </footer>
+
 </body>
 
 </html>
