@@ -7,11 +7,13 @@ header {
   color: white;
 }
 
-
+/* update */
 body {
     background-color: lightblue;
     margin: 0;
     padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #222
 }
 
 .profile {
@@ -20,47 +22,62 @@ body {
     display: block;
     margin: 0 auto; 
 }
-
+/* update */ 
 h1 {
     color: midnightblue;
     text-align: center;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 36px; /* update */ 
     margin-top: 20px;
     margin-bottom: 10px;
     border-bottom: 2px solid midnightblue;
 }
-
-.cutenav li {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: steelblue;
-    text-align: center;
-    margin: 5px 0;
+/* update */
+.cutenav ul {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  list-style: none;
+  padding: 10px 0;
+  margin: 0;
+  background-color: midnightblue;
+  border-radius: 8px;
+  flex-wrap: wrap;
 }
 
-.cutenav ul {
-  list-style-position: inside;
-  padding-left: 0;
+.cutenav li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  padding: 10px 15px;
+  display: block;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.cutenav li a:hover {
+  background-color: lightblue;
 }
 
 h2 {
     color: darkblue;
     text-align: center;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 24px;  /* update */ 
+    margin: 30px 0 15px;
     border: solid 2px darkblue;
+    border-radius: 5px;
     padding: 10px;
 }
-
+/* update */ 
 p {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: darkslategray;
     text-align: center;
     margin: 10px 0;
 }
 
 #education, #skills, #projects {
-    font-family: 'Playfair Display', serif;
     color: navy; 
-    margin-bottom: 10px;
+    margin-bottom: 20px; /* update */
 }
 
 table {
@@ -69,12 +86,14 @@ table {
   margin: 0 auto 20px;
   background-color: white;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  font-size: 15px; /* update */ 
 }
-
+ 
 th, td {
   border: 1px solid #6c8cd5;
   padding: 10px;
   text-align: center;
+  width: 33.33%;    /* update */
 }
 
 th {
@@ -87,24 +106,132 @@ th {
   overflow-x: auto;
 }
 
+/* update */
 button {
   background-color: midnightblue;
   color: white;
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
+  font-family: inherit;
+  font-size: 16px;
   cursor: pointer;
   display: block;
-  margin: 10px, auto; 
+  margin: 20px auto;
+  transition: background-color 0.3s ease;
 }
 
 button:hover {
-  background-color: #0c154d; 
-}
-
+  background-color: #0c154d;
+} 
+/* update */
 @media (max-width: 768px) {
   .profile {
     width: 160px;
     height: auto;
   }
+  h1 {
+    font-size: 28px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  .cutenav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  .cutenav li a {
+    font-size: 14px; 
+  }
 } 
+
+#typing::after {
+  content: "|";
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  0%   { opacity: 1; }
+  50%  { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+#darkModeToggle {
+  background-color: midnightblue;
+  color: white;
+  padding: 10px 20px;
+  margin: 20px auto;
+  display: block;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#darkModeToggle:hover {
+  background-color: #0c154d;
+}
+
+.dark-mode {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode p,
+.dark-mode a {
+  color: #e0e0e0;
+}
+
+.dark-mode header {
+  background-color: #1f1f1f;
+  color: white;
+}
+
+.dark-mode .cutenav a {
+  color: #a8cfff;
+}
+
+.dark-mode table {
+  background-color: #222;
+  color: white;
+}
+
+.dark-mode th {
+  background-color: #333;
+}
+
+.dark-mode button {
+  background-color: #444;
+  color: white;
+}
+
+.back-to-top {
+  display: block;
+  width: fit-content;
+  margin: 30px auto;
+  padding: 10px 20px;
+  background-color: midnightblue;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  transition: background-color 0.3s ease;
+  text-align: center;
+}
+
+.back-to-top:hover {
+  background-color: #0c154d;
+} 
+
+.reveal {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.6s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
