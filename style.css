@@ -119,6 +119,13 @@ button {
 button:hover {
   background-color: #0c154d;
 } 
+/*update: to remove line under download */
+a button {
+  text-decoration: none;
+}
+a {
+  text-decoration: none;
+}
 /* update */
 @media (max-width: 768px) {
   .profile {
