@@ -1,4 +1,4 @@
-const text = "I am an IT student with a genuine passion for tech and problem-solving. Whether it is troubleshooting systems, learning a new programming language, or diving into cloud concepts, I enjoy figuring things out and finding smart solutions. I have been working on certifications to strengthen my skills, and I am always looking for opportunities to grow and gain real-world experience.";
+const text = "Greetings! I am an IT student with a genuine passion for tech and problem-solving. Whether it is troubleshooting systems, learning a new programming language, or diving into cloud concepts, I enjoy figuring things out and finding smart solutions. I have been working on certifications to strengthen my skills, and I am always looking for opportunities to grow and gain real-world experience.";
 
 let index = 0;
 
